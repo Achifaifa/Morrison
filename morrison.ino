@@ -38,5 +38,6 @@ void loop() {
   // If the doorbell switch is pressed, activate the doorbell output
   if(digitalRead(doorbell)==1){
     digitalWrite(doorbellsig, HIGH);
+    analogWrite(7, 128)
   }
 }
